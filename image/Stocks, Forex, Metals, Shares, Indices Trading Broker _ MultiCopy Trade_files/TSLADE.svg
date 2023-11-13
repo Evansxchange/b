@@ -1,0 +1,16 @@
+<svg id="TSLADE" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="70" height="70" viewBox="0 0 70 70">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_13491" data-name="Rectangle 13491" width="52.143" height="51.921" fill="#e82127"/>
+    </clipPath>
+  </defs>
+  <rect id="Rectangle_13501" data-name="Rectangle 13501" width="70" height="70" fill="rgba(11,239,160,0.47)" opacity="0"/>
+  <g id="Group_27188" data-name="Group 27188" transform="translate(8.928 9)">
+    <g id="Group_27189" data-name="Group 27189">
+      <g id="Group_27188-2" data-name="Group 27188" clip-path="url(#clip-path)">
+        <path id="Path_40247" data-name="Path 40247" d="M30.973,62.738l7.294-41.026c6.954,0,9.146.763,9.463,3.875,0,0,4.666-1.739,7.018-5.272a51.536,51.536,0,0,0-18.4-4.446l-5.383,6.555h.011l-5.382-6.555A51.531,51.531,0,0,0,7.186,20.313c2.351,3.532,7.019,5.272,7.019,5.272.317-3.113,2.509-3.874,9.415-3.88Z" transform="translate(-4.898 -10.816)" fill="#e82127"/>
+        <path id="Path_40248" data-name="Path 40248" d="M26.072,3.158A60.125,60.125,0,0,1,50.684,8.1,19.812,19.812,0,0,0,52.143,5.08,71.356,71.356,0,0,0,26.071,0,71.359,71.359,0,0,0,0,5.08,25.085,25.085,0,0,0,1.46,8.1,60.119,60.119,0,0,1,26.071,3.158Z" fill="#e82127"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,32 @@
+*{
+ Box-sizing: border-box;
+ Margin: 0;
+ Padding: 0;
+ font-family: Helvetica Neue, Helvetica, Arial, sans-serif;;
+ scroll-behavior: smooth;
+}
+
+*::-webkit-scrollbar{
+ background-color: #04106a;
+ width: 8px;
+ border-radius: 8px;
+}
+
+*::-webkit-scrollbar-track{
+ box-shadow: inset 0 0 5px rgb(255, 255, 255, .5);
+}
+
+*::-webkit-scrollbar-thumb{
+ background-color: #ad8017;
+ border-radius: 10px;
+}
+
+button:hover,
+a:hover{
+ cursor: pointer;
+}
+
+body {
+ overflow-x: hidden;
+ width: 100%;
+}

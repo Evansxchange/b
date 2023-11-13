@@ -1,0 +1,286 @@
+@import "nav_footer.css";
+@import "reset.css";
+@import "root.css";
+
+.header{
+ background-image: url(https://multicopytrade.com/assets/newfront/images/products/forex/forex-hero-new-t.webp);
+ background-position: center;
+ background-size: cover;
+ margin-top: 6.2rem;
+ height: 100vh;
+ text-align: center;
+ padding-top: 3rem;
+ margin-bottom: 7rem;
+
+
+ @media (width >= 1150px) {
+  background-image: url(https://multicopytrade.com/assets/newfront/images/products/forex/forex-hero-new-d.webp);
+  height: 100vh;
+  border-bottom: 10px solid var(--clr-gold);
+ }
+
+
+ & .container{
+  max-width: 700px;
+  margin-inline: auto;
+  overflow-x: hidden;
+
+ }
+
+ & h1{
+  color: var(--clr-gold);
+  padding-block: 1rem;
+  font-size: 46px;
+  font-weight: 100;
+
+  @media (width >= 1150px) {
+   font-size: 60px;
+   text-align: left;
+   padding-left: 3rem;
+  }
+ }
+
+ & p{
+  color: var(--bs-white);
+  font-size: 12px;
+
+  @media (width >= 1150px) {
+   text-align: left;
+   padding-left: 3rem;
+  }
+ }
+}
+
+.cards{
+ background-image: linear-gradient(to top, rgb(3, 3, 49), rgb(6, 6, 63),  rgba(14, 14, 148, 0.16));
+ transform: translateY(3rem);
+ margin-inline: auto;
+ align-items: center;
+
+ @media (width <= 500px) {
+  display: grid;
+  grid-template-columns: 1fr;
+  transform: translateY(22rem);
+  
+ }
+
+ @media (width >= 1150px) {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-image: none;
+  
+ }
+ 
+
+
+
+
+
+ & .container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  @media (width <= 500px) {
+   display: grid;
+   grid-template-columns: 1fr !important;
+  }
+ }
+
+ & .card_items{
+  background-color: var(--bs-gray-200);
+  margin: 1rem;
+  border-radius: 10px;
+  padding: .5rem;
+  align-items: center;
+  max-width: 100%;
+
+  @media (width <= 500px) {
+   min-width: 80vw;
+  }
+ }
+
+ & h2{
+  border: none;
+  color: var(--clr-dark_blue);
+  font-size: 14px;
+  font-weight: 600;
+ }
+
+ & h3{
+  border: none;
+ }
+
+ & p{
+  color: var(--gray);
+  padding-block: .5rem;
+
+
+  & span{
+   font-weight: 800;
+  }
+ }
+}
+
+.cards .card_items :is(div){
+ display: flex;
+ justify-content: space-between;
+}
+
+.bid{
+ display: flex;
+ flex-direction: column;
+
+ & p{
+  color: var(--clr-dark_blue);
+ }
+
+ & h4{
+  color: var(--bs-gray);
+  font-size: 14px;
+ }
+}
+
+@media (width >= 50rem) {
+ .container{
+  max-width: 900px;
+ }
+}
+
+.container_2{
+ display: grid;
+ grid-template-columns: repeat(2, 1fr);
+ max-width: 700px;
+ margin-inline: auto;
+
+
+}
+
+.card{
+ background-image: linear-gradient( to bottom, rgb(6, 6, 178), rgb(5, 5, 182), rgb(3, 3, 92), rgb(1, 1, 34));
+ margin: 1rem;
+ border-radius: 10px;
+ margin-bottom: 6rem;
+
+ @media (width >= 1150px) {
+  /* margin-top: -15rem; */
+  /* transform: translateY(15rem); */
+  max-height: 8rem;
+  width: 15rem;
+
+ }
+
+ & h1{
+  font-size: 25px ;
+  font-weight: 100;
+ }
+
+ & p{
+  color: var(--bs-white);
+  padding-bottom: .5rem;
+ }
+}
+
+.faq{
+ background-color: var(--bs-white);
+ /* margin-top: 40rem; */
+ margin-bottom: 10rem;
+ padding: 1rem;
+
+ 
+ @media (width <= 460px) {
+   margin-top: 44rem;
+ }
+
+
+ & h1{
+  color: var(--clr-gold);
+  font-size: 30px;
+  font-weight: 100;
+  margin-block: .5rem;
+
+ }
+
+ & h2{
+  text-align: left;
+  color: var(--clr-dark_blue);
+  font-weight: 400;
+ }
+
+ & p{
+  color: var(--clr-dark_blue);
+  font-size: 14px;
+  margin-block: 1.5rem;
+ }
+
+ @media (width >= 1150px) {
+  margin-block: 0rem 8rem !important;
+ }
+}
+
+@media (width <= 350px) {
+  .faq{
+  margin-top: 55rem !important ;
+
+  }
+}
+
+.fx-pairs{
+ margin-bottom: 8rem;
+
+ & .container{
+  max-width: 700px;
+  margin-inline: auto;
+  padding: 1rem;
+ }
+}
+
+.fx-pairs .slide{
+ display: flex;justify-content: space-between;
+ align-items: center;
+
+ & h3{
+  position: relative;
+  color: var(--clr-dark_blue);
+  font-weight: 100;
+  font-size: clamp(1rem, 2.5vw, 2rem); 
+
+ }
+
+ & input{
+  height: 2.5rem;
+  border-radius: 30px;
+  border:1px solid var(--clr-dark_blue);
+  outline: none;
+  padding-left: 1rem;
+ }
+}
+
+.fx-pairs h3::after{
+ content: "";
+ display: none;
+ position: absolute;
+ left: 0;
+ bottom: -.5rem;
+ height: 3px;
+ width: 100%;
+ padding-bottom: .5rem;
+ border-bottom: 3px solid var(--clr-gold);
+}
+
+.fx-pairs h3::after .active{
+ display: block;
+}
+
+.fx-pairs  input:focus-within,
+.fx-pairs  input:focus-visible,
+.fx-pairs  input:focus{
+ border:1px solid var(--clr-gold) !important;
+ outline: none;
+}
+
+.fx-pairs ::placeholder{
+ color: var(--bs-gray-600);
+ font-weight: 100;
+ font-size: 16px;
+}
+

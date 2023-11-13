@@ -1,0 +1,587 @@
+*{
+ Box-sizing: border-box;
+ Margin: 0;
+ Padding: 0;
+ font-family: Helvetica Neue, Helvetica, Arial, sans-serif;;
+ scroll-behavior: smooth;
+}
+
+*::-webkit-scrollbar{
+ background-color: #04106a;
+ width: 8px;
+ border-radius: 8px;
+}
+
+*::-webkit-scrollbar-track{
+ box-shadow: inset 0 0 5px rgb(255, 255, 255, .5);
+}
+
+*::-webkit-scrollbar-thumb{
+ background-color: #ad8017;
+ border-radius: 10px;
+}
+
+button:hover,
+a:hover{
+ cursor: pointer;
+}
+
+body {
+ overflow-x: hidden;
+ width: 100%;
+}
+
+nav{
+ position: fixed;
+ left: 0;
+ display: grid;
+ align-items: center;
+ background-color: #0c164a;
+ Padding: 0.6rem 0.5rem;
+ Margin: 0;
+ Font-size: 12px;
+ Font-weight: bold;
+ width: 100%;
+ z-index: 90;
+}
+
+.log{
+ text-align: end;
+ border-bottom: .5px solid rgb(255, 255, 255,.3);
+ overflow: hidden;
+}
+
+.log button{
+ background-color: transparent;
+ color: #fff;
+ padding: .2rem .5rem;
+ margin-bottom: .3rem;
+ border: 1.5px solid gold;
+ border-radius: 5px;
+}
+
+.nav-items{
+ display: flex;
+ Justify-content: space-between;
+ align-items: center;
+ margin: .5rem ;
+}
+
+.brand-name{
+ position: sticky;
+ top: 0;
+ display: flex;
+ Font-size: 25px;
+ align-items: center;
+ Animation: fadeBrand 2s linear forwards; 
+ overflow: hidden;  
+ 
+ & a{
+   Color: #bb914a;
+   text-decoration: none;
+ }
+}
+
+@keyframes fadeBrand{
+from{
+Opacity: 0;
+}
+to{
+Opacity: 1;
+}
+}
+
+.trade a{
+Color:#fff;
+Font-weight: bolder;
+}
+
+ul{
+display: flex;
+Align-items: center;
+} 
+
+li{
+ display: block;
+list-style: none;
+margin-left: 1rem;
+padding: .5rem;
+Color: #fff;
+}
+
+li:hover{
+ color: #8A6E2F;
+ cursor: pointer;
+}
+li a{
+ text-decoration: none;
+ color: #fff;
+}
+
+li a:hover{
+ color: #8A6E2F;
+ cursor: pointer;
+}
+.login{
+ display: none;
+Border:1px solid gold;
+Padding: 0.4rem 0.4rem;
+Border-radius: 5px;
+}
+
+nav .container{
+ display: none;
+ position: absolute;
+ width: 100%;
+}
+
+ul .about:hover .container,
+ul .about:focus-within .container {
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr !important;
+ background-color: #0c164a;
+ color: #fff;
+ text-align: center;
+ margin-top: 0.5rem;
+ padding: 1rem .5rem;
+ left: 0;
+ width: 100vw !important;
+ height: fit-content;
+ border-top: 1px solid rgb(255, 255, 255, .3);
+ cursor: pointer;
+ z-index: 1000;
+ cursor: pointer;
+}
+
+.container .one:hover{
+ color: #fff !important;
+}
+
+.container .two:hover{
+ color: #fff !important;
+}
+
+li .container div{
+ border-right: 1px solid white;
+ width: 100% !important;
+ padding: .2rem;
+}
+
+.container .one h1, h3{
+ margin-bottom: .5rem;
+ font-size: 28px;
+}
+
+.container .one p{
+ font-size: 12px;
+ line-height: 25px;
+}
+
+.container .two h1, h2, h3{
+ margin: 1.5rem 0;
+ font-size: 20px;
+ text-align: center;
+ border-bottom: 1px solid white;
+}
+
+.container .three h1{
+ margin-bottom: .5rem;
+ font-size: 20px;
+ text-align: center;
+ border-bottom: 1px solid white;
+
+}
+
+.container .three div{
+ border: none;
+}
+
+.container ul{
+ display: block;
+ text-align: center;
+
+
+ & li{
+   margin-bottom: .5rem;
+   margin-top: .5rem;
+ }
+}
+
+.container li{
+ cursor: pointer;
+ color: #8A6E2F;
+}
+
+.container .two li:hover{
+ color: #8A6E2F;
+}
+
+.container .two li:hover{
+ color: #8A6E2F;
+}
+
+ul .about:hover .container,
+ul .about:focus-within .container {
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ background-color: #0c164a;
+ justify-content: center;
+ text-align: center;
+ color: #fff;
+ margin-top: 0.5rem;
+ padding: 1.5rem 0rem;
+ left: 0;
+ width: 100% !important;
+ height: fit-content;
+ border-top: 1px solid rgb(255, 255, 255, .3);
+ cursor: pointer;
+ z-index: 50;
+
+ & h1{
+   width: 100%;
+ }
+
+ & img{
+   width: 100%;
+ }
+}
+
+ul .about:hover .container .two ul{
+ display: inline;
+ width: fit-content !important;
+ text-align: center;
+ justify-content: center;
+ padding: 0.5rem;
+
+ & li{
+   font-size: 10px;
+   margin: 0;
+ }
+}
+
+ul .Product:hover .container,
+ul .Product:focus-within .container {
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ background-color: #0c164a;
+ justify-content: center;
+ text-align: center;
+ color: #fff;
+ margin-top: 0.5rem;
+ padding: 1.5rem 0rem;
+ left: 0;
+ width: 100% !important;
+ height: fit-content;
+ border-top: 1px solid rgb(255, 255, 255, .3);
+ cursor: pointer;
+ z-index: 50;
+
+ & h1{
+   width: 100%;
+ }
+
+ & img{
+   width: 100%;
+ }
+}
+
+ul .Product:hover .container .two ul{
+ display: inline;
+ width: fit-content !important;
+ text-align: center;
+ justify-content: center;
+ padding: 0.5rem;
+
+ & li{
+   font-size: 10px;
+   margin: 0;
+ }
+}
+
+ul .tools:hover .container,
+ul .tools:focus-within .container  {
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ background-color: rgb(12, 22, 74);
+ color: #fff;
+ margin-top: 0.5rem;
+ padding: 1.5rem .5rem;
+ left: 0;
+ width: 100vw !important;
+ height: fit-content;
+ border-top: 1px solid rgb(255, 255, 255, .3);
+ cursor: pointer;
+ z-index: 50;
+}
+
+ul .tools:hover .container ul{
+ display: inline;
+ text-align: center;
+ padding-inline: auto;
+ padding: 0 !important;
+}
+
+
+.head{
+ background-image: url(https://multicopytrade.com/assets/newfront/images/about_us/career_new_page/header-careerpage-m@2x.webp);
+ background-size: 100%;
+ background-position: center;
+ background-repeat: no-repeat;
+ min-height: 90vh;
+ padding-top: 5.7rem;
+ margin-bottom: 16rem;
+
+
+ & .head_text{
+  text-align: center;
+  background-image: linear-gradient(to top, rgb(12, 22, 74, .1), rgb(12, 22, 74),  rgb(12, 22, 74));
+  padding-block: 8rem;
+
+  & h1{
+   color: #bb914a;
+   font-size: 50px;
+  }
+
+  & p{
+   color: #fff;
+   font-size: 14px;
+   font-weight: 100;
+  }
+ }
+
+ & .head_content{
+  position: absolute;
+  padding-top: 8rem;
+  height: 68vh;
+  width: 100%;
+  bottom: -8rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  align-items: center;
+  background-image: linear-gradient(to bottom , rgb(12, 22, 74, .1), rgb(12, 22, 74),  rgb(12, 22, 74), rgb(12, 22, 74), rgb(12, 22, 74));
+
+  & div{
+   padding-block: .5rem;
+   padding-inline: 1rem;
+  }
+
+  & h2{
+   border: none;
+   color: #fff;
+   font-size: 16px;
+   font-weight: 100 !important;
+  }
+ }
+}
+
+.map{
+ margin: -5rem 0;
+ width: 100vw;
+ overflow: hidden;
+ & p{
+   padding: 4rem 6rem 10rem 6rem !important;
+   background-color: #0c164a;
+   color: rgb(255, 255, 255, .7);
+   font-size: 14px;
+ }
+}
+footer{
+ background-color: #0c164a;
+ display: flex;
+ flex-direction: column;
+ flex-wrap: nowrap;
+ width: 100%;
+
+
+ & ul{
+   margin: 1rem 3rem 0 -5rem;
+ }
+
+ & a{
+   font-size: calc((10px) + .5vw);
+   position: relative;
+ }
+}
+
+footer a::after{
+ content: '';
+ position: absolute;
+ bottom: -3px;
+ left: 0;
+ border: 1px solid  #1E53E5;
+ width: 100%;
+}
+
+footer .bottom{
+ text-align: left;
+ display: grid;
+ padding-left: 2rem;
+}
+
+footer .brand_name{
+ display: flex;
+ Font-size: 16px;
+ align-items: center;
+ Color: #bb914a;;
+
+ & .trade{
+   font-weight: bold;
+   color: #fff;
+ }
+}
+
+footer .copyright{
+ color: rgb(255, 255, 255, .7);
+ font-size: 14px;
+ margin-block: 2rem;
+}
+
+.employ{
+  background-image: linear-gradient(to bottom,  rgb(12, 22, 74), rgb(4, 16, 106),  rgb(12, 22, 74),  rgb(12, 22, 74));
+  margin-top: -5rem;
+  min-height: 60vh;
+  padding-block: 16rem;
+
+  
+  & h1{
+    text-align: center;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 100;
+  }
+
+  & .content{
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    margin-top: 2rem;
+
+    & p{
+      padding: 1rem 2rem;
+      color: #fff;
+      text-align: left;
+    }
+  }
+
+  & .button{
+    margin-block: 3rem;
+    text-align: center;
+
+    & button{
+      padding: 1.3rem 1rem;
+      border-radius: 10px;
+      border: none;
+      color: #0c164a;
+      background-image: linear-gradient(to right,  rgb(173, 128, 23),  rgb(173, 128, 23, .6));
+      font-size: 20px;
+      font-weight: 600;
+    }
+  }
+  & p{
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+  }
+}
+
+
+
+
+
+
+
+@media (min-width: 50rem){
+ footer .bottom{
+   display: flex;
+   margin-right: 2rem;
+   align-items: center;
+   justify-content: space-between;
+ }
+
+ .head{
+  background-image: url(https://multicopytrade.com/assets/newfront/images/about_us/career_new_page/header-careerpage-m@2x.png) !important;
+  min-height: 110vh;
+  background-blend-mode: soft-light;
+  margin-bottom: 9.5rem;
+
+
+  & .head_text{
+   padding-top: 14rem;
+   background-image: linear-gradient(to top, rgb(12, 22, 74, .1), rgb(12, 22, 74, .9), rgb(12, 22, 74));
+  }
+ }
+
+ .head_content{
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr !important;
+  bottom: -10rem !important;
+  background-image: linear-gradient(to bottom , rgb(12, 22, 74, .1), rgb(12, 22, 74), rgb(12, 22, 74)) !important;
+ }
+
+ .employ{
+
+  & .content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-inline: 3rem;
+    }
+
+    & p{
+      margin-right: 1rem;
+    }
+  }
+
+  @media (min-width: 900px){
+    & .content{
+      padding-inline: 10rem !important;
+    }
+  }
+    @media (min-width: 1200px) {
+      & .content{
+        padding-inline: 19rem !important;
+      }
+    }  
+ }
+
+
+
+
+@media (max-width: 50rem) {
+ nav{
+   width: 100vw;
+ }
+ .log{
+   display: none;
+ }
+ .login{
+   display: block;
+   font-size: 10px;
+   margin-top: .5rem;
+ }
+ .brand-name{
+   font-size: 30px;
+   width: 100vw;
+   margin-block: -1rem;
+   justify-content: center;
+   border-bottom: 1px solid rgb(255, 255, 255, .2);
+ }
+ .nav-items{
+   display: grid;
+   grid-template-columns: 1fr;
+   justify-content: center;
+ }
+ .nav-items ul{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: start;
+   text-align: left;
+   margin-top: .5rem;
+   padding: .5rem;
+ }
+ ul li{
+   font-size: 12px;
+   margin-left: 1rem;
+ }
+}  
